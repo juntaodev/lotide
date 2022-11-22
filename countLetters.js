@@ -1,3 +1,4 @@
+// FUNCTION IMPLEMENTATION
 const countLetters = function(sentence) {
   let results = {};
   for (let char of sentence) {
@@ -12,6 +13,5 @@ const countLetters = function(sentence) {
   return results;
 };
 
-// TEST CODE
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;
 
