@@ -1,15 +1,4 @@
-const eqArray = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  eqArray(arr1, arr2) ? console.log(`👍👍👍Assertion Passed: expected ${arr2} and found ${arr1}`) : console.log(`❌❌❌Assertion Failed: expected ${arr2} instead found ${arr1}`);
-};
-
+// FUNCTION IMPLEMENTATION
 const middle = function(arr) {
   let mid = [];
   
@@ -29,26 +18,4 @@ const middle = function(arr) {
   return mid;
 };
 
-// TEST CODE
-// test middle function
-console.log(middle([1, ]));
-console.log(middle([1, 2]));
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4, 5]));
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5, 6]));
-
-// test right output
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-// test wrong output
-assertArraysEqual(middle([1]), [1]);
-assertArraysEqual(middle([1, 2]), [2]);
-assertArraysEqual(middle([1, 2, 3]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3]);
+module.exports = middle;
