@@ -1,3 +1,4 @@
+// FUNCTION IMPLEMENTATION
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
@@ -9,5 +10,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// TEST CODE
-console.log(letterPositions("hello"));
+module.exports = letterPositions;
